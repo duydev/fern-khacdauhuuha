@@ -1,0 +1,41 @@
+[debug] [2018-07-20T19:22:12.651Z] ----------------------------------------------------------------------
+[debug] [2018-07-20T19:22:12.655Z] Command:       /home/duydev/.nvm/versions/node/v8.11.3/bin/node /home/duydev/.nvm/versions/node/v8.11.3/bin/firebase deploy
+[debug] [2018-07-20T19:22:12.655Z] CLI Version:   3.19.3
+[debug] [2018-07-20T19:22:12.655Z] Platform:      linux
+[debug] [2018-07-20T19:22:12.655Z] Node Version:  v8.11.3
+[debug] [2018-07-20T19:22:12.655Z] Time:          Sat Jul 21 2018 02:22:12 GMT+0700 (+07)
+[debug] [2018-07-20T19:22:12.655Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-20T19:22:12.666Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-20T19:22:12.666Z] > authorizing via signed-in user
+[debug] [2018-07-20T19:22:12.668Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-07-20T19:22:12.668Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/nPQwp2Jc1Hrllm-5ZAGND2kPpM7ShxnGzRhsSI8Od-8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Jul 21 2018 02:22:12 GMT+0700 (+07)
+[debug] [2018-07-20T19:22:12.971Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-20T19:22:12.976Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/khacdauhuuha-com  
+  
+ Sat Jul 21 2018 02:22:12 GMT+0700 (+07)
+[debug] [2018-07-20T19:22:14.215Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-20T19:22:14.217Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/khacdauhuuha-com/tokens  
+  
+ Sat Jul 21 2018 02:22:14 GMT+0700 (+07)
+[debug] [2018-07-20T19:22:15.066Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'khacdauhuuha-com'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing build directory for upload...
+[debug] [2018-07-20T19:22:17.569Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/khacdauhuuha-com/uploads/-LHt87V6WbnFZmqArAPh?fileCount=9&message=  
+  
+ Sat Jul 21 2018 02:22:17 GMT+0700 (+07)
+[debug] [2018-07-20T19:22:18.029Z] Error: connect ECONNREFUSED 23.251.151.130:443
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1186:14)
+[error] 
+[error] Error: Server Error. connect ECONNREFUSED 23.251.151.130:443
